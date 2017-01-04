@@ -2,7 +2,7 @@
 	"title": "senna.js",
 	"index": {
 		"title": "Home",
-		"description": "A Blazing-Fast Single Page Application Engine",
+		"description": "A blazing fast Single Page Application engine",
 		"srcFilePath": "src/pages/index.soy",
 		"url": "/",
 		"children": [
