@@ -18946,6 +18946,9 @@ babelHelpers;
 
 		this['metal']['SidebarHome'] = SidebarHome;
 }).call(this);
+"use strict";
+
+(function () {}).call(this);
 'use strict';
 
 (function () {
@@ -19016,7 +19019,10 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'topbar-logo');
       ie_open('a', null, null, 'class', 'topbar-logo-link', 'href', '/');
       ie_open('span', null, null, 'class', 'name');
-      itext('Senna.js');
+      itext('Senna');
+      ie_open('span');
+      itext('.js');
+      ie_close('span');
       ie_close('span');
       ie_open('span', null, null, 'class', 'by');
       itext('by Liferay');
@@ -19152,11 +19158,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param13 = function param13() {
+      var param45 = function param45() {
         $sidebar(soy.$$assignDefaults({ section: opt_data.site.index.children[0] }, opt_data), null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param13 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param45 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -19175,16 +19181,16 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'guide-header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('h1', null, null, 'class', 'guide-header-title');
-      var dyn1 = opt_data.page.category;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      var dyn2 = opt_data.page.category;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
       ie_close('h1');
       ie_close('div');
       ie_close('header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('div', null, null, 'class', 'docs-guide row');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
-      var dyn2 = opt_data.content;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
       $feedback(opt_data, null, opt_ijData);
       ie_close('div');
       ie_open('nav', null, null, 'class', 'col-xs-16 col-md-offset-2 col-md-5');
@@ -19281,22 +19287,22 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s46_a2205383(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s78_a2205383(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       if (opt_data.page.icon) {
         ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       }
       ie_open('span');
-      var dyn3 = opt_data.page.title;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      var dyn4 = opt_data.page.title;
+      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s46_a2205383 = __deltemplate_s46_a2205383;
+    exports.__deltemplate_s78_a2205383 = __deltemplate_s78_a2205383;
     if (goog.DEBUG) {
-      __deltemplate_s46_a2205383.soyTemplateName = 'guide.__deltemplate_s46_a2205383';
+      __deltemplate_s78_a2205383.soyTemplateName = 'guide.__deltemplate_s78_a2205383';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s46_a2205383);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s78_a2205383);
 
     exports.render.params = ["page", "site"];
     exports.render.types = { "page": "any", "site": "any" };
@@ -19405,8 +19411,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
       ie_close('main');
       ie_close('div');
     }
@@ -19518,8 +19524,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'sidebar-offset');
       $templateAlias1(opt_data, null, opt_ijData);
       ie_close('div');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
       ie_close('main');
       ie_close('div');
     }
@@ -19576,9 +19582,6 @@ babelHelpers;
 
   this['metal']['mainDocs'] = mainDocs;
 }).call(this);
-"use strict";
-
-(function () {}).call(this);
 'use strict';
 
 (function () {
@@ -19629,15 +19632,17 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'id', 'senna-body-default');
-      var param95 = function param95() {
+      var param13 = function param13() {
         $header(opt_data, null, opt_ijData);
         $why(null, null, opt_ijData);
         $highlights(null, null, opt_ijData);
+        $start(null, null, opt_ijData);
+        $initializing(null, null, opt_ijData);
         $how(null, null, opt_ijData);
         $features(null, null, opt_ijData);
         $footer(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param95 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param13 }, opt_data), null, opt_ijData);
       ie_close('div');
     }
     exports.render = $render;
@@ -19656,22 +19661,31 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'header');
       ie_open('div', null, null, 'class', 'container');
       ie_open('h1', null, null, 'id', 'header-h1', 'class', 'header-title');
-      itext('SENNA.JS');
+      itext('SENNA');
+      ie_open('span');
+      itext('.JS');
+      ie_close('span');
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-subtitle', 'id', 'header-h2');
-      var dyn6 = opt_data.site.index.description;
-      if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+      var dyn1 = opt_data.site.index.description;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
       ie_close('h2');
       ie_open('div', null, null, 'id', 'header-button', 'class', 'header-cta');
-      ie_open('a', null, null, 'id', 'header-button-download', 'href', 'https://github.com/liferay/senna.js/archive/master.zip', 'class', 'btn btn-accent');
+      ie_open('a', null, null, 'id', 'header-button-download', 'href', '/docs/index.html', 'class', 'btn btn-accent');
+      ie_void('span', null, null, 'class', 'icon-16-menu-content');
+      itext(' Get Started');
+      ie_close('a');
+      ie_open('a', null, null, 'id', 'header-button-github', 'href', 'https://github.com/liferay/senna.js/archive/master.zip', 'class', 'btn btn-default', 'target', '_blank');
       ie_void('span', null, null, 'class', 'icon-16-download');
       itext(' Download');
       ie_close('a');
-      ie_open('a', null, null, 'id', 'header-button-github', 'href', 'https://github.com/liferay/senna.js/', 'class', 'btn btn-default', 'target', '_blank');
-      ie_void('span', null, null, 'class', 'icon-16-github');
-      itext(' GitHub');
-      ie_close('a');
       ie_close('div');
+      ie_close('div');
+      ie_open('div', null, null, 'id', 'gh-btns-container', 'class', 'container');
+      ie_open('p', null, null, 'class', 'gh-btns');
+      ie_void('iframe', null, null, 'src', 'http://ghbtns.com/github-btn.html?user=liferay&repo=senna.js&type=watch&count=true&size=large', 'allowtransparency', 'true', 'frameborder', '0', 'scrolling', '0', 'width', '150', 'height', '30');
+      ie_void('iframe', null, null, 'src', 'http://ghbtns.com/github-btn.html?user=liferay&repo=senna.js&type=fork&count=true&size=large', 'allowtransparency', 'true', 'frameborder', '0', 'scrolling', '0', 'width', '150', 'height', '30');
+      ie_close('p');
       ie_close('div');
       ie_close('header');
     }
@@ -19693,10 +19707,10 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'row');
       ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
       ie_open('h3', null, null, 'class', 'about-title');
-      itext('Why Senna.js?');
+      itext('Why?');
       ie_close('h3');
       ie_open('p', null, null, 'class', 'about-description');
-      itext('We built Senna.js to be a lightweight plugin that can turn any static site into a fast and responsive app without adding frameworks or rewriting tons of code.');
+      itext('We built Senna to be a lightweight plugin that can turn any static site into a fast and responsive app without adding frameworks or rewriting tons of code.');
       ie_close('p');
       ie_void('p');
       ie_close('div');
@@ -19717,57 +19731,105 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $highlights(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'highlights');
+      ie_open('div', null, null, 'class', 'highlight');
       ie_open('div', null, null, 'class', 'container');
       ie_open('section', null, null, 'class', 'highlight row');
-      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
+      ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
       ie_open('h4', null, null, 'class', 'highlight-title');
-      itext('Link');
+      itext('Blazing Fast');
       ie_close('h4');
       ie_open('p', null, null, 'class', 'highlight-description');
-      itext('First, add Senna.js to your document using CDN.');
+      itext('Our clean API\'s can turn your static site into a blazing fast single-page application in just a couple clicks.');
       ie_close('p');
       ie_close('div');
-      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-      ie_open('p', null, null, 'class', 'highlight-code');
-      ie_open('pre');
-      ie_open('code');
-      ie_open('span', null, null, 'class', 'hljs-tag');
-      itext('<');
-      ie_open('span', null, null, 'class', 'hljs-name');
-      itext('script');
-      ie_close('span');
-      itext(' ');
-      ie_open('span', null, null, 'class', 'hljs-attr');
-      itext('src');
-      ie_close('span');
-      itext('=');
-      ie_open('span', null, null, 'class', 'hljs-string');
-      itext('"https:cdn.jsdelivr.net/senna.js/2.1.1/senna-min.js"');
-      ie_close('span');
-      itext('>');
-      ie_close('span');
-      ie_open('span', null, null, 'class', 'handlebars');
-      ie_void('span', null, null, 'class', 'xml');
-      ie_close('span');
-      ie_open('br');
-      ie_close('br');
-      ie_close('code');
-      ie_close('pre');
-      ie_close('p');
+      ie_open('div', null, null, 'class', 'col-md-6 highlight-graphic');
+      ie_void('span', null, null, 'class', 'icon-16-flash');
       ie_close('div');
       ie_close('section');
       ie_open('section', null, null, 'class', 'highlight row');
-      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
+      ie_open('div', null, null, 'class', 'col-md-6 col-md-push-8');
       ie_open('h4', null, null, 'class', 'highlight-title');
-      itext('Add');
+      itext('Minimal Bandwidth');
       ie_close('h4');
       ie_open('p', null, null, 'class', 'highlight-description');
-      itext('Then, include the Senna.js attributes into your body element');
+      itext('By cacheing reusable resources like CSS and Script files, Senna significantly lowers your user\'s bandwidth.');
+      ie_close('p');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-5 col-md-offset-2 col-md-pull-6 highlight-graphic');
+      ie_void('span', null, null, 'class', 'icon-16-cloud');
+      ie_close('div');
+      ie_close('section');
+      ie_open('section', null, null, 'class', 'highlight row');
+      ie_open('div', null, null, 'class', 'col-md-6 col-md-offset-2');
+      ie_open('h4', null, null, 'class', 'highlight-title');
+      itext('Incredibly Versatile');
+      ie_close('h4');
+      ie_open('p', null, null, 'class', 'highlight-description');
+      itext('No need to switch frameworks. Senna is unobtrusive and can be easily added to your existing HTML or JavaScript.');
+      ie_close('p');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-6 highlight-graphic');
+      ie_void('span', null, null, 'class', 'icon-16-globe');
+      ie_close('div');
+      ie_close('section');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.highlights = $highlights;
+    if (goog.DEBUG) {
+      $highlights.soyTemplateName = 'pageIndex.highlights';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $start(opt_data, opt_ignored, opt_ijData) {
+      ie_open('article', null, null, 'class', 'about');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('div', null, null, 'class', 'row');
+      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
+      ie_open('h3', null, null, 'class', 'about-title');
+      itext('Using Senna');
+      ie_close('h3');
+      ie_open('p', null, null, 'class', 'about-description');
+      itext('There are many ways to use Senna. You can install the NPM depenency, link the CDN, or even download the full package with example files. Here is one of the easy ways to get started with Senna in a couple clicks.');
+      ie_close('p');
+      ie_void('p');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+      ie_close('article');
+    }
+    exports.start = $start;
+    if (goog.DEBUG) {
+      $start.soyTemplateName = 'pageIndex.start';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $initializing(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'initializing');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('section', null, null, 'class', 'initializing row');
+      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
+      ie_open('h4', null, null, 'class', 'initializing-title');
+      itext('1. Link');
+      ie_close('h4');
+      ie_open('p', null, null, 'class', 'initializing-description');
+      itext('First, add Senna to your document using CDN.');
       ie_close('p');
       ie_close('div');
       ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-      ie_open('p', null, null, 'class', 'highlight-code');
+      ie_open('p', null, null, 'class', 'initializing-code');
       ie_open('pre');
       ie_open('code');
       ie_open('span', null, null, 'class', 'hljs-tag');
@@ -19790,7 +19852,7 @@ babelHelpers;
       ie_close('span');
       itext('=');
       ie_open('span', null, null, 'class', 'hljs-string');
-      itext('"https:cdn.jsdelivr.net/senna.js/2.1.1/senna-min.js"');
+      itext('"https://cdn.jsdelivr.net/senna.js/2.1.1/senna-min.js"');
       ie_close('span');
       itext('>');
       ie_close('span');
@@ -19808,6 +19870,24 @@ babelHelpers;
       ie_close('span');
       ie_open('br');
       ie_close('br');
+      ie_close('code');
+      ie_close('pre');
+      ie_close('p');
+      ie_close('div');
+      ie_close('section');
+      ie_open('section', null, null, 'class', 'initializing row');
+      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
+      ie_open('h4', null, null, 'class', 'initializing-title');
+      itext('2. Add');
+      ie_close('h4');
+      ie_open('p', null, null, 'class', 'initializing-description');
+      itext('Then, include the Senna attributes into your body element');
+      ie_close('p');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
+      ie_open('p', null, null, 'class', 'initializing-code');
+      ie_open('pre');
+      ie_open('code');
       ie_open('span', null, null, 'class', 'hljs-tag');
       itext('<');
       ie_open('span', null, null, 'class', 'hljs-name');
@@ -19840,22 +19920,26 @@ babelHelpers;
       ie_close('p');
       ie_close('div');
       ie_close('section');
-      ie_open('section', null, null, 'class', 'highlight row');
+      ie_open('section', null, null, 'class', 'initializing row');
       ie_open('div', null, null, 'class', 'col-md-12 col-md-offset-2');
-      ie_open('h4', null, null, 'class', 'highlight-title');
-      itext('Run');
+      ie_open('h4', null, null, 'class', 'initializing-title');
+      itext('3. Run');
       ie_close('h4');
-      ie_open('p', null, null, 'class', 'highlight-description');
+      ie_open('p', null, null, 'class', 'initializing-description');
       itext('Now navigating through different pages of your app to see how fast it is!');
       ie_close('p');
+      ie_open('a', null, null, 'id', 'example-button', 'href', 'http://sennajs.com/examples/email', 'class', 'btn btn-example', 'target', '_blank');
+      ie_void('span');
+      itext(' See An Example');
+      ie_close('a');
       ie_close('div');
       ie_close('section');
       ie_close('div');
       ie_close('div');
     }
-    exports.highlights = $highlights;
+    exports.initializing = $initializing;
     if (goog.DEBUG) {
-      $highlights.soyTemplateName = 'pageIndex.highlights';
+      $initializing.soyTemplateName = 'pageIndex.initializing';
     }
 
     /**
@@ -19874,7 +19958,7 @@ babelHelpers;
       itext('How does it work?');
       ie_close('h3');
       ie_open('p', null, null, 'class', 'about-description');
-      itext('We built Senna.js to be a lightweight plugin that can turn any static site into a fast and responsive app without adding frameworks or rewriting tons of code.');
+      itext('We built Senna to be a lightweight plugin that can turn any static site into a fast and responsive app without adding frameworks or rewriting tons of code.');
       ie_close('p');
       ie_close('div');
       ie_close('div');
@@ -19934,7 +20018,7 @@ babelHelpers;
       itext('NAVIGATE');
       ie_close('h3');
       ie_open('p', null, null, 'class', 'feature-description');
-      itext('A link is clicked and Senna.js populates the new url even though it is not fully loading a new page.');
+      itext('A link is clicked and Senna populates the new url even though it is not fully loading a new page.');
       ie_close('p');
       ie_close('section');
       ie_open('section', null, null, 'class', 'feature col-md-4');
@@ -19954,7 +20038,7 @@ babelHelpers;
       itext('REQUEST');
       ie_close('h3');
       ie_open('p', null, null, 'class', 'feature-description');
-      itext('The request is made but Senna.js utilizes the cached resources before pulling any new elements. ');
+      itext('The request is made but Senna utilizes the cached resources before pulling any new elements. ');
       ie_close('p');
       ie_close('section');
       ie_open('section', null, null, 'class', 'feature col-md-4');
@@ -19974,7 +20058,7 @@ babelHelpers;
       itext('PAINT');
       ie_close('h3');
       ie_open('p', null, null, 'class', 'feature-description');
-      itext('Quickly, Senna.js finds what content is new to the requested page and paints only the new content to the screen.');
+      itext('Quickly, Senna finds what content is new to the requested page and paints only the new content to the screen.');
       ie_close('p');
       ie_close('section');
       ie_close('div');
@@ -20026,6 +20110,10 @@ babelHelpers;
     exports.why.types = {};
     exports.highlights.params = [];
     exports.highlights.types = {};
+    exports.start.params = [];
+    exports.start.types = {};
+    exports.initializing.params = [];
+    exports.initializing.types = {};
     exports.how.params = [];
     exports.how.types = {};
     exports.features.params = [];
@@ -20129,11 +20217,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param121 = function param121() {
+      var param127 = function param127() {
         $templateAlias2({ section: opt_data.site.index.children[0] }, null, opt_ijData);
         $topics(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param121 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param127 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -20196,18 +20284,18 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'row');
       ie_open('div', null, null, 'class', 'col-md-13 col-md-offset-3 col-xs-16');
       ie_open('div', null, null, 'class', 'row');
-      var topicList139 = opt_data.site.index.children[0].children;
-      var topicListLen139 = topicList139.length;
-      for (var topicIndex139 = 0; topicIndex139 < topicListLen139; topicIndex139++) {
-        var topicData139 = topicList139[topicIndex139];
-        if (!topicData139.hidden) {
+      var topicList145 = opt_data.site.index.children[0].children;
+      var topicListLen145 = topicList145.length;
+      for (var topicIndex145 = 0; topicIndex145 < topicListLen145; topicIndex145++) {
+        var topicData145 = topicList145[topicIndex145];
+        if (!topicData145.hidden) {
           ie_open('div', null, null, 'class', 'col-md-6 col-xs-16');
-          ie_open('a', null, null, 'class', 'topic topic-' + topicData139.icon + ' radial-out', 'href', topicData139.url);
+          ie_open('a', null, null, 'class', 'topic topic-' + topicData145.icon + ' radial-out', 'href', topicData145.url);
           ie_open('div', null, null, 'class', 'topic-icon $topic');
-          ie_void('span', null, null, 'class', 'icon-16-' + topicData139.icon);
+          ie_void('span', null, null, 'class', 'icon-16-' + topicData145.icon);
           ie_close('div');
           ie_open('h3', null, null, 'class', 'topic-title');
-          var dyn7 = topicData139.title;
+          var dyn7 = topicData145.title;
           if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
           ie_close('h3');
           ie_close('a');
@@ -20327,12 +20415,12 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param145 = function param145() {
+      var param151 = function param151() {
         ie_open('div', null, null, 'class', 'container-hybrid docs-home-top');
         $templateAlias2({ action: '/docs/search.html', placeholder: 'Search Docs', section: opt_data.site.index.children[0] }, null, opt_ijData);
         ie_close('div');
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param145 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param151 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -20439,7 +20527,7 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param155 = function param155() {
+      var param161 = function param161() {
         ie_open('div', null, null, 'class', 'updates');
         ie_open('header', null, null, 'class', 'header');
         ie_open('div', null, null, 'class', 'container');
@@ -20447,14 +20535,14 @@ babelHelpers;
         itext('Updates');
         ie_close('h1');
         ie_open('h1', null, null, 'class', 'header-subtitle');
-        itext('Check out what\'s new.');
+        itext('Check out what\'s new bellow.');
         ie_close('h1');
         ie_close('div');
         ie_close('header');
         $templateAlias2({ updates: opt_data.page.updates, featureVariant: 'sennajs' }, null, opt_ijData);
         ie_close('div');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param155 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param161 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -20468,7 +20556,7 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s162_09f21d91(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s168_09f21d91(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'col-xs-16 col-sm-16 update-feature');
       ie_open('div', null, null, 'class', 'feature-topper');
       ie_void('span', null, null, 'class', 'feature-icon icon-16-' + opt_data.feature.icon);
@@ -20497,11 +20585,11 @@ babelHelpers;
       ie_close('div');
       ie_close('div');
     }
-    exports.__deltemplate_s162_09f21d91 = __deltemplate_s162_09f21d91;
+    exports.__deltemplate_s168_09f21d91 = __deltemplate_s168_09f21d91;
     if (goog.DEBUG) {
-      __deltemplate_s162_09f21d91.soyTemplateName = 'updatesIndex.__deltemplate_s162_09f21d91';
+      __deltemplate_s168_09f21d91.soyTemplateName = 'updatesIndex.__deltemplate_s168_09f21d91';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGUpdates.feature.idom'), 'sennajs', 0, __deltemplate_s162_09f21d91);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGUpdates.feature.idom'), 'sennajs', 0, __deltemplate_s168_09f21d91);
 
     exports.render.params = ["page"];
     exports.render.types = { "page": "any" };
@@ -20601,7 +20689,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param174 = function param174() {
+      var param180 = function param180() {
         ie_open('h1');
         itext('Error Handling');
         ie_close('h1');
@@ -20735,7 +20823,7 @@ babelHelpers;
         ie_void('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param174 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param180 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -20840,8 +20928,8 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param179 = function param179() {};
-      $templateAlias1(soy.$$assignDefaults({ content: param179 }, opt_data), null, opt_ijData);
+      var param185 = function param185() {};
+      $templateAlias1(soy.$$assignDefaults({ content: param185 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -20946,7 +21034,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param183 = function param183() {
+      var param189 = function param189() {
         ie_open('p');
         itext('JavaScript APIs');
         ie_close('p');
@@ -21292,7 +21380,7 @@ babelHelpers;
         ie_void('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param183 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param189 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21397,7 +21485,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param188 = function param188() {
+      var param194 = function param194() {
         ie_open('h1');
         itext('Routes');
         ie_close('h1');
@@ -21551,7 +21639,7 @@ babelHelpers;
         ie_close('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param188 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param194 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21656,7 +21744,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param193 = function param193() {
+      var param199 = function param199() {
         ie_open('h1');
         itext('Trackable Resources');
         ie_close('h1');
@@ -21757,7 +21845,7 @@ babelHelpers;
         ie_void('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param193 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param199 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21862,7 +21950,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param198 = function param198() {
+      var param204 = function param204() {
         ie_open('h1');
         itext('UI Feedback');
         ie_close('h1');
@@ -22185,7 +22273,7 @@ babelHelpers;
         ie_void('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param198 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param204 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22290,7 +22378,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param203 = function param203() {
+      var param209 = function param209() {
         ie_open('h1');
         itext('Controlling Surfaces');
         ie_close('h1');
@@ -22680,7 +22768,7 @@ babelHelpers;
         ie_void('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param203 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param209 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22785,8 +22873,8 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param208 = function param208() {};
-      $templateAlias1(soy.$$assignDefaults({ content: param208 }, opt_data), null, opt_ijData);
+      var param214 = function param214() {};
+      $templateAlias1(soy.$$assignDefaults({ content: param214 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22891,7 +22979,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param212 = function param212() {
+      var param218 = function param218() {
         ie_open('h1');
         itext('Screens');
         ie_close('h1');
@@ -23030,7 +23118,7 @@ babelHelpers;
         ie_void('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param212 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param218 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -23135,7 +23223,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param217 = function param217() {
+      var param223 = function param223() {
         ie_open('h1');
         itext('Installing Senna');
         ie_close('h1');
@@ -23466,7 +23554,7 @@ babelHelpers;
         ie_close('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param217 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param223 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -23571,7 +23659,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param222 = function param222() {
+      var param228 = function param228() {
         ie_open('h1');
         itext('How Does It Work?');
         ie_close('h1');
@@ -23620,7 +23708,7 @@ babelHelpers;
         ie_close('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param222 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param228 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -23725,8 +23813,8 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param227 = function param227() {};
-      $templateAlias1(soy.$$assignDefaults({ content: param227 }, opt_data), null, opt_ijData);
+      var param233 = function param233() {};
+      $templateAlias1(soy.$$assignDefaults({ content: param233 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -23831,7 +23919,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param231 = function param231() {
+      var param237 = function param237() {
         ie_open('h1');
         itext('The Building Blocks');
         ie_close('h1');
@@ -23958,7 +24046,7 @@ babelHelpers;
         ie_close('p');
         ie_close('article');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param231 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param237 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
