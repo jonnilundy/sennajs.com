@@ -8765,10 +8765,13 @@ button.close {
     font-weight: 400;
     margin-left: 8px;
     position: relative;
-    top: -2px; }
+    top: -2px;
+    display: none; }
 
 .topbar-list {
-  margin-right: 8px; }
+  margin-right: 8px;
+  align-items: stretch;
+  margin-top: 3px; }
 
 .topbar-link {
   color: rgba(27, 26, 24, 0.8);
@@ -8821,6 +8824,10 @@ button.close {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@media (min-width: 600px) {
+  .topbar-logo-link .by {
+    display: block; } }
 
 /* Loading */
 .senna-loading-bar {
@@ -8894,13 +8901,13 @@ button.close {
   animation-name: fadeIn; }
 
 .header {
-  padding: 120px 0 0;
+  padding: 80px 0 0;
   text-align: center;
   background-color: white; }
 
 .header-title {
   font-family: "Galano Bold", sans-serif;
-  font-size: 99px;
+  font-size: 55px;
   margin: 0;
   color: #1B1A18; }
   .header-title span {
@@ -8909,13 +8916,13 @@ button.close {
 .header-subtitle {
   font-family: "Open Sans", sans-serif;
   color: rgba(27, 26, 24, 0.8);
-  font-size: 24px;
+  font-size: 22px;
   line-height: 24px;
   margin: 8px 0 30px; }
 
 .header-cta a {
   font-size: 18px;
-  margin: 0 15px 140px; }
+  margin: 0 15px 20px; }
 
 .header .header-cta a {
   width: 228px; }
@@ -8938,6 +8945,7 @@ button.close {
 
 .gh-btns {
   margin: 0;
+  margin-top: 80px;
   padding: 17px 0 12px;
   background: rgba(27, 26, 24, 0.07); }
   .gh-btns #gh-count:hover {
@@ -9051,6 +9059,18 @@ code {
   100% {
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
+
+@media (min-width: 600px) {
+  .header-title {
+    font-size: 99px; }
+  .header-subtitle {
+    font-size: 24px; }
+  .header-cta a {
+    margin-bottom: 140px; }
+  gh-btns {
+    margin-top: 0; }
+  .header {
+    padding-top: 140px; } }
 
 .about {
   background: #1B1A18;
@@ -9219,17 +9239,18 @@ code {
   border-top: 10px solid $accent;
   box-shadow: 0 2px 8px rgba($primary, 0.2);*/
   border-radius: 50%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 .highlight-graphic [class^="icon-16-"],
 .highlight-graphc[class*="icon-16-"] {
   box-shadow: 0 2px 8px rgba(27, 26, 24, 0.2);
   /* padding: 20px 25px; */
   border-radius: 50%;
-  font-size: 120px;
-  line-height: 213px;
+  font-size: 62px;
+  line-height: 137px;
   color: #FFCC00;
-  width: 220px;
+  width: 140px;
   display: block;
   margin: auto; }
 
@@ -9269,6 +9290,15 @@ code {
 
 .highlight-code .hljs-function, .highlight-code .python .hljs-decorator, .highlight-code .python .hljs-title, .highlight-code .ruby .hljs-function .hljs-title, .highlight-code .ruby .hljs-title .hljs-keyword, .highlight-code .perl .hljs-sub, .highlight-code .javascript .hljs-title, .highlight-code .coffeescript .hljs-title {
   color: rgba(7, 190, 123, 0.9); }
+
+@media (min-width: 600px) {
+  .highlight-graphic [class^="icon-16-"],
+  .highlight-graphc[class*="icon-16-"] {
+    font-size: 120px;
+    line-height: 213px;
+    width: 220px; }
+  .highlight-graphic {
+    margin-top: 0px; } }
 
 .initializing .container {
   padding-top: 50px;
@@ -9333,7 +9363,7 @@ code {
 
 .initializing-code code {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 16px;
+  font-size: 13px;
   background: transparent;
   border: 0;
   color: white;
@@ -9354,6 +9384,10 @@ code {
 
 .initializing-code .hljs-function, .initializing-code .python .hljs-decorator, .initializing-code .python .hljs-title, .initializing-code .ruby .hljs-function .hljs-title, .initializing-code .ruby .hljs-title .hljs-keyword, .initializing-code .perl .hljs-sub, .initializing-code .javascript .hljs-title, .initializing-code .coffeescript .hljs-title {
   color: rgba(7, 190, 123, 0.9); }
+
+@media (min-width: 600px) {
+  .initializing-code code {
+    font-size: 15px; } }
 
 .footer {
   background: #1B1A18;

@@ -8,7 +8,7 @@
 		"children": [
 			{
 				"description": "Documentation description.",
-				"title": "Documentation",
+				"title": "Docs",
 				"srcFilePath": "src/pages/docs/index.soy",
 				"url": "/docs",
 				"children": [
