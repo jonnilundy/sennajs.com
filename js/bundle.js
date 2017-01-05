@@ -19158,11 +19158,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param45 = function param45() {
+      var param13 = function param13() {
         $sidebar(soy.$$assignDefaults({ section: opt_data.site.index.children[0] }, opt_data), null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param45 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param13 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -19181,16 +19181,16 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'guide-header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('h1', null, null, 'class', 'guide-header-title');
-      var dyn2 = opt_data.page.category;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      var dyn1 = opt_data.page.category;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
       ie_close('h1');
       ie_close('div');
       ie_close('header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('div', null, null, 'class', 'docs-guide row');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      var dyn2 = opt_data.content;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
       $feedback(opt_data, null, opt_ijData);
       ie_close('div');
       ie_open('nav', null, null, 'class', 'col-xs-16 col-md-offset-2 col-md-5');
@@ -19287,22 +19287,22 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s78_a2205383(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s46_a2205383(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       if (opt_data.page.icon) {
         ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       }
       ie_open('span');
-      var dyn4 = opt_data.page.title;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      var dyn3 = opt_data.page.title;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s78_a2205383 = __deltemplate_s78_a2205383;
+    exports.__deltemplate_s46_a2205383 = __deltemplate_s46_a2205383;
     if (goog.DEBUG) {
-      __deltemplate_s78_a2205383.soyTemplateName = 'guide.__deltemplate_s78_a2205383';
+      __deltemplate_s46_a2205383.soyTemplateName = 'guide.__deltemplate_s46_a2205383';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s78_a2205383);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s46_a2205383);
 
     exports.render.params = ["page", "site"];
     exports.render.types = { "page": "any", "site": "any" };
@@ -19411,8 +19411,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+      var dyn4 = opt_data.content;
+      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
       ie_close('main');
       ie_close('div');
     }
@@ -19524,8 +19524,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'sidebar-offset');
       $templateAlias1(opt_data, null, opt_ijData);
       ie_close('div');
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
       ie_close('main');
       ie_close('div');
     }
@@ -19632,7 +19632,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'id', 'senna-body-default');
-      var param13 = function param13() {
+      var param95 = function param95() {
         $header(opt_data, null, opt_ijData);
         $why(null, null, opt_ijData);
         $highlights(null, null, opt_ijData);
@@ -19642,7 +19642,7 @@ babelHelpers;
         $features(null, null, opt_ijData);
         $footer(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param13 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param95 }, opt_data), null, opt_ijData);
       ie_close('div');
     }
     exports.render = $render;
@@ -19667,12 +19667,12 @@ babelHelpers;
       ie_close('span');
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-subtitle', 'id', 'header-h2');
-      var dyn1 = opt_data.site.index.description;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      var dyn6 = opt_data.site.index.description;
+      if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
       ie_close('h2');
       ie_open('div', null, null, 'id', 'header-button', 'class', 'header-cta');
-      ie_open('a', null, null, 'id', 'header-button-download', 'href', '/docs/index.html', 'class', 'btn btn-accent');
-      ie_void('span', null, null, 'class', 'icon-16-menu-content');
+      ie_open('a', null, null, 'id', 'header-button-download', 'href', '/docs/', 'class', 'btn btn-accent');
+      ie_void('span', null, null, 'class', 'icon-16-circle-arrow');
       itext(' Get Started');
       ie_close('a');
       ie_open('a', null, null, 'id', 'header-button-github', 'href', 'https://github.com/liferay/senna.js/archive/master.zip', 'class', 'btn btn-default', 'target', '_blank');
