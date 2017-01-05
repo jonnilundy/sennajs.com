@@ -19158,11 +19158,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param13 = function param13() {
+      var param45 = function param45() {
         $sidebar(soy.$$assignDefaults({ section: opt_data.site.index.children[0] }, opt_data), null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param13 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param45 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -19181,16 +19181,16 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'guide-header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('h1', null, null, 'class', 'guide-header-title');
-      var dyn1 = opt_data.page.category;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      var dyn2 = opt_data.page.category;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
       ie_close('h1');
       ie_close('div');
       ie_close('header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('div', null, null, 'class', 'docs-guide row');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
-      var dyn2 = opt_data.content;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
       $feedback(opt_data, null, opt_ijData);
       ie_close('div');
       ie_open('nav', null, null, 'class', 'col-xs-16 col-md-offset-2 col-md-5');
@@ -19287,22 +19287,22 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s46_a2205383(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s78_a2205383(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       if (opt_data.page.icon) {
         ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       }
       ie_open('span');
-      var dyn3 = opt_data.page.title;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      var dyn4 = opt_data.page.title;
+      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s46_a2205383 = __deltemplate_s46_a2205383;
+    exports.__deltemplate_s78_a2205383 = __deltemplate_s78_a2205383;
     if (goog.DEBUG) {
-      __deltemplate_s46_a2205383.soyTemplateName = 'guide.__deltemplate_s46_a2205383';
+      __deltemplate_s78_a2205383.soyTemplateName = 'guide.__deltemplate_s78_a2205383';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s46_a2205383);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('SSGNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s78_a2205383);
 
     exports.render.params = ["page", "site"];
     exports.render.types = { "page": "any", "site": "any" };
@@ -19411,8 +19411,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       $templateAlias1(opt_data, null, opt_ijData);
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
       ie_close('main');
       ie_close('div');
     }
@@ -19524,8 +19524,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'sidebar-offset');
       $templateAlias1(opt_data, null, opt_ijData);
       ie_close('div');
-      var dyn5 = opt_data.content;
-      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
       ie_close('main');
       ie_close('div');
     }
@@ -19632,7 +19632,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'id', 'senna-body-default');
-      var param95 = function param95() {
+      var param13 = function param13() {
         $header(opt_data, null, opt_ijData);
         $why(null, null, opt_ijData);
         $highlights(null, null, opt_ijData);
@@ -19642,7 +19642,7 @@ babelHelpers;
         $features(null, null, opt_ijData);
         $footer(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param95 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param13 }, opt_data), null, opt_ijData);
       ie_close('div');
     }
     exports.render = $render;
@@ -19667,8 +19667,8 @@ babelHelpers;
       ie_close('span');
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-subtitle', 'id', 'header-h2');
-      var dyn6 = opt_data.site.index.description;
-      if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+      var dyn1 = opt_data.site.index.description;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
       ie_close('h2');
       ie_open('div', null, null, 'id', 'header-button', 'class', 'header-cta');
       ie_open('a', null, null, 'id', 'header-button-download', 'href', '/docs/', 'class', 'btn btn-accent');
@@ -21035,9 +21035,9 @@ babelHelpers;
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
       var param189 = function param189() {
-        ie_open('p');
+        ie_open('h1');
         itext('JavaScript APIs');
-        ie_close('p');
+        ie_close('h1');
         ie_open('article', null, null, 'id', 'js-api');
         ie_open('h2');
         itext('Full control using JavaScript APIs');
@@ -22338,851 +22338,6 @@ babelHelpers;
   var templates;
   goog.loadModule(function (exports) {
 
-    // This file was automatically generated from controllingSurfaces.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace docsFullyFunctionalControllingSurfacesHtml.
-     * @public
-     */
-
-    goog.module('docsFullyFunctionalControllingSurfacesHtml.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param209 = function param209() {
-        ie_open('h1');
-        itext('Controlling Surfaces');
-        ie_close('h1');
-        ie_open('article', null, null, 'id', 'data-attributes-explained');
-        ie_open('h2');
-        itext('How do you make sure Senna does exactly what you want?');
-        ie_close('h2');
-        ie_open('p');
-        itext('By default, Senna is setup to route every link to ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext('- the out-of-the-box screen that senna provides to handle navigation so you don\'t have to change anything in your existing back end.');
-        ie_close('p');
-        ie_open('p');
-        itext('For most situations, this will be the ideal use of Senna because it is smart enough to know how to paint your surfaces with the new information when you navigate.');
-        ie_close('p');
-        ie_open('p');
-        itext('But what if you want Senna to only be active during certain navigations? We make it easy for you to control what screens of your app interact with Senna and which ones do not. We call this ');
-        ie_open('a', null, null, 'href', '#taking-control');
-        itext('Controlling Data Attributes');
-        ie_close('a');
-        itext('.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'taking-control');
-        ie_open('h2');
-        itext('Taking control of your surfaces');
-        ie_close('h2');
-        ie_open('p');
-        itext('Once you have Senna fully running (see ');
-        ie_open('a', null, null, 'href', '/docs/intro/gettingStarted.html');
-        itext('Getting Started');
-        ie_close('a');
-        itext(' if you are not sure), you can choose to limit Senna by controlling the data attributes.');
-        ie_close('p');
-        ie_open('p');
-        itext('In order to limit your whole app from routing through ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext(', you can add ');
-        ie_open('code');
-        itext('<link rel="senna-route">');
-        ie_close('code');
-        itext(' to the ');
-        ie_open('code');
-        itext('head');
-        ie_close('code');
-        itext(' of your document. This will tell Senna to ');
-        ie_open('strong');
-        itext('only');
-        ie_close('strong');
-        itext(' route your specified paths through ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext('. Your document would look like this:');
-        ie_close('p');
-        ie_void('p');
-        itext('\n');
-        ie_open('pre');
-        ie_open('code');
-        ie_open('span', null, null, 'class', 'hljs-meta');
-        itext('<!doctype html>');
-        ie_close('span');
-        itext('\n');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('html');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('head');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('meta');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('charset');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"utf-8"');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('title');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('Senna - blazing fast apps');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('title');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('link');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('rel');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"stylesheet"');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('href');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"../build/senna.css"');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n    ');
-        ie_open('span', null, null, 'class', 'hljs-comment');
-        itext('<!-- Controlling Data Attributes -->');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('link');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('rel');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"senna-route"');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('href');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"/examplePage1.html"');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('type');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"senna.HtmlScreen"');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('script');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('src');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"../build/senna-debug.js"');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        ie_void('span', null, null, 'class', 'undefined');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('script');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('head');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('body');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('data-senna');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('a');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('href');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"/pages/examplePage1.html"');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('Page 1');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('a');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('a');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('href');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"/pages/examplePage2.html"');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('Page 2');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('a');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('div');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('id');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"my-awesome-surface"');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-attr');
-        itext('data-senna-surface');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n    ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('<');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('p');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('Default content of my website.');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('p');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n  ');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('div');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('body');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n');
-        ie_open('span', null, null, 'class', 'hljs-tag');
-        itext('</');
-        ie_open('span', null, null, 'class', 'hljs-name');
-        itext('html');
-        ie_close('span');
-        itext('>');
-        ie_close('span');
-        itext('\n');
-        ie_close('code');
-        ie_close('pre');
-        itext('\n');
-        ie_void('p');
-        ie_open('p');
-        itext('You can also use ');
-        ie_open('a', null, null, 'href', 'https://en.wikipedia.org/wiki/Regular_expression', 'target', '_blank');
-        itext('RegEx');
-        ie_close('a');
-        itext(' to select multiple paths with one string.');
-        ie_close('p');
-        ie_void('p');
-        itext('\n');
-        ie_open('pre');
-        ie_open('code');
-        itext('<link ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('rel');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"senna-route"');
-        ie_close('span');
-        itext(' href=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"examplePage1.html"');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('type');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"senna.HtmlScreen"');
-        ie_close('span');
-        itext('>\n<link ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('rel');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"senna-route"');
-        ie_close('span');
-        itext(' href=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"regex:examplePage[1-9].html"');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('type');
-        ie_close('span');
-        itext('=');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"senna.HtmlScreen"');
-        ie_close('span');
-        itext('>\n');
-        ie_close('code');
-        ie_close('pre');
-        itext('\n');
-        ie_void('p');
-        ie_close('article');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param209 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'docsFullyFunctionalControllingSurfacesHtml.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var docsFullyFunctionalControllingSurfacesHtml = function (_Component) {
-    babelHelpers.inherits(docsFullyFunctionalControllingSurfacesHtml, _Component);
-
-    function docsFullyFunctionalControllingSurfacesHtml() {
-      babelHelpers.classCallCheck(this, docsFullyFunctionalControllingSurfacesHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalControllingSurfacesHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalControllingSurfacesHtml)).apply(this, arguments));
-    }
-
-    return docsFullyFunctionalControllingSurfacesHtml;
-  }(Component);
-
-  Soy.register(docsFullyFunctionalControllingSurfacesHtml, templates);
-  this['metalNamed']['controllingSurfaces'] = this['metalNamed']['controllingSurfaces'] || {};
-  this['metalNamed']['controllingSurfaces']['docsFullyFunctionalControllingSurfacesHtml'] = docsFullyFunctionalControllingSurfacesHtml;
-  this['metalNamed']['controllingSurfaces']['templates'] = templates;
-  this['metal']['controllingSurfaces'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['controllingSurfaces'];
-
-  var docsFullyFunctionalControllingSurfacesHtml = function (_Component) {
-    babelHelpers.inherits(docsFullyFunctionalControllingSurfacesHtml, _Component);
-
-    function docsFullyFunctionalControllingSurfacesHtml() {
-      babelHelpers.classCallCheck(this, docsFullyFunctionalControllingSurfacesHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalControllingSurfacesHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalControllingSurfacesHtml)).apply(this, arguments));
-    }
-
-    return docsFullyFunctionalControllingSurfacesHtml;
-  }(Component);
-
-  ;
-
-  Soy.register(docsFullyFunctionalControllingSurfacesHtml, templates);
-
-  this['metal']['docsFullyFunctionalControllingSurfacesHtml'] = docsFullyFunctionalControllingSurfacesHtml;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace docsFullyFunctionalIndexHtml.
-     * @public
-     */
-
-    goog.module('docsFullyFunctionalIndexHtml.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param214 = function param214() {};
-      $templateAlias1(soy.$$assignDefaults({ content: param214 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'docsFullyFunctionalIndexHtml.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var docsFullyFunctionalIndexHtml = function (_Component) {
-    babelHelpers.inherits(docsFullyFunctionalIndexHtml, _Component);
-
-    function docsFullyFunctionalIndexHtml() {
-      babelHelpers.classCallCheck(this, docsFullyFunctionalIndexHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalIndexHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalIndexHtml)).apply(this, arguments));
-    }
-
-    return docsFullyFunctionalIndexHtml;
-  }(Component);
-
-  Soy.register(docsFullyFunctionalIndexHtml, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['docsFullyFunctionalIndexHtml'] = docsFullyFunctionalIndexHtml;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var docsFullyFunctionalIndexHtml = function (_Component) {
-    babelHelpers.inherits(docsFullyFunctionalIndexHtml, _Component);
-
-    function docsFullyFunctionalIndexHtml() {
-      babelHelpers.classCallCheck(this, docsFullyFunctionalIndexHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalIndexHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalIndexHtml)).apply(this, arguments));
-    }
-
-    return docsFullyFunctionalIndexHtml;
-  }(Component);
-
-  ;
-
-  Soy.register(docsFullyFunctionalIndexHtml, templates);
-
-  this['metal']['docsFullyFunctionalIndexHtml'] = docsFullyFunctionalIndexHtml;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from screens.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace docsFullyFunctionalScreensHtml.
-     * @public
-     */
-
-    goog.module('docsFullyFunctionalScreensHtml.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param218 = function param218() {
-        ie_open('h1');
-        itext('Screens');
-        ie_close('h1');
-        ie_open('article', null, null, 'id', 'senna.HTMLScreen');
-        ie_open('h2');
-        itext('Senna.HTMLscreen');
-        ie_close('h2');
-        ie_open('p');
-        itext('Senna.js provides a special type of route handler, or interface, called ');
-        ie_open('code');
-        itext('senna.Screen');
-        ie_close('code');
-        itext('. This in itself is not an active class, rather, it merely defines the screen interface methods and demonstrates how to use the API. The real magic happens when we extend ');
-        ie_open('code');
-        itext('senna.Screen');
-        ie_close('code');
-        itext('.');
-        ie_close('p');
-        ie_open('p');
-        itext('We knew this might be a little tricky at first, so we creating our own extention: ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext('- the default screen we created to make Senna.js ready to work straight out of the box.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'senna.screenToWork');
-        ie_open('h2');
-        itext('How can you put Senna.HTMLScreen to work?');
-        ie_close('h2');
-        ie_open('p');
-        itext('We designed Senna to use ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext(' as the default extension for all navigation so you can start using Senna without worrying about changing anything in your back end. But how do I start setting up my screens with ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext('? That\'s the thing, you already did!');
-        ie_close('p');
-        ie_open('p');
-        itext('When you added ');
-        ie_open('code');
-        itext('data-senna');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-        itext('data-senna-surface');
-        ie_close('code');
-        itext(' to your document (see ');
-        ie_open('a', null, null, 'href', '/docs/intro/gettingStarted.html');
-        itext('Getting Started');
-        ie_close('a');
-        itext('), you told senna to route all the navigations through ');
-        ie_open('code');
-        itext('senna.HTMLScreen');
-        ie_close('code');
-        itext('.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'moreScreens');
-        ie_open('h2');
-        itext('Screens, screens, and more screens');
-        ie_close('h2');
-        ie_open('p');
-        itext('We want you to know how Senna works so that you can fully trust it to empower your app. Bellow are the cycle logs for senna.Screen. Feel free to look at them or even inspect your own browser console during a link navigation using Senna.');
-        ie_close('p');
-        ie_open('p');
-        itext('You can also jump to ');
-        ie_open('a', null, null, 'href', '/docs/advancedUsage/controllingSurfaces.html');
-        itext('Controlling Surfaces');
-        ie_close('a');
-        itext(' to learn more about how to customize screens on your app.');
-        ie_close('p');
-        ie_void('p');
-        itext('\n');
-        ie_open('pre');
-        ie_open('code');
-        itext('Navigate to [/examples/mysite/pages/page1.html]\n');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('Create');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('screen');
-        ie_close('span');
-        itext(' ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('for');
-        ie_close('span');
-        itext(' [/examples/mysite/pages/page1.html]\n');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('Screen');
-        ie_close('span');
-        itext(' [screen_1408572719183] ');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('load');
-        ie_close('span');
-        itext('\nXHR finished loading: GET ');
-        ie_open('span', null, null, 'class', 'hljs-string');
-        itext('"http://localhost:8000/examples/mysite/pages/page1.html"');
-        ie_close('span');
-        itext('.\n');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('Screen');
-        ie_close('span');
-        itext(' [screen_1408572719183] add content to ');
-        ie_open('span', null, null, 'class', 'hljs-built_in');
-        itext('surface');
-        ie_close('span');
-        itext(' [');
-        ie_open('span', null, null, 'class', 'hljs-built_in');
-        itext('header');
-        ie_close('span');
-        itext(']\n');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('Screen');
-        ie_close('span');
-        itext(' [screen_1408572719183] add content to ');
-        ie_open('span', null, null, 'class', 'hljs-built_in');
-        itext('surface');
-        ie_close('span');
-        itext(' [content]\n');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('Screen');
-        ie_close('span');
-        itext(' [screen_1408572719183] flip\n');
-        ie_open('span', null, null, 'class', 'hljs-keyword');
-        itext('Screen');
-        ie_close('span');
-        itext(' [screen_1408572719183] activate\nNavigation done\n');
-        ie_close('code');
-        ie_close('pre');
-        itext('\n');
-        ie_void('p');
-        ie_close('article');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param218 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'docsFullyFunctionalScreensHtml.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var docsFullyFunctionalScreensHtml = function (_Component) {
-    babelHelpers.inherits(docsFullyFunctionalScreensHtml, _Component);
-
-    function docsFullyFunctionalScreensHtml() {
-      babelHelpers.classCallCheck(this, docsFullyFunctionalScreensHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalScreensHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalScreensHtml)).apply(this, arguments));
-    }
-
-    return docsFullyFunctionalScreensHtml;
-  }(Component);
-
-  Soy.register(docsFullyFunctionalScreensHtml, templates);
-  this['metalNamed']['screens'] = this['metalNamed']['screens'] || {};
-  this['metalNamed']['screens']['docsFullyFunctionalScreensHtml'] = docsFullyFunctionalScreensHtml;
-  this['metalNamed']['screens']['templates'] = templates;
-  this['metal']['screens'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['screens'];
-
-  var docsFullyFunctionalScreensHtml = function (_Component) {
-    babelHelpers.inherits(docsFullyFunctionalScreensHtml, _Component);
-
-    function docsFullyFunctionalScreensHtml() {
-      babelHelpers.classCallCheck(this, docsFullyFunctionalScreensHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalScreensHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalScreensHtml)).apply(this, arguments));
-    }
-
-    return docsFullyFunctionalScreensHtml;
-  }(Component);
-
-  ;
-
-  Soy.register(docsFullyFunctionalScreensHtml, templates);
-
-  this['metal']['docsFullyFunctionalScreensHtml'] = docsFullyFunctionalScreensHtml;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
     // This file was automatically generated from gettingStarted.soy.
     // Please don't edit this file by hand.
 
@@ -24100,6 +23255,851 @@ babelHelpers;
   Soy.register(docsGettingStartedTheBuildingblocksHtml, templates);
 
   this['metal']['docsGettingStartedTheBuildingblocksHtml'] = docsGettingStartedTheBuildingblocksHtml;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from controllingSurfaces.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace docsFullyFunctionalControllingSurfacesHtml.
+     * @public
+     */
+
+    goog.module('docsFullyFunctionalControllingSurfacesHtml.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var param209 = function param209() {
+        ie_open('h1');
+        itext('Controlling Surfaces');
+        ie_close('h1');
+        ie_open('article', null, null, 'id', 'data-attributes-explained');
+        ie_open('h2');
+        itext('How do you make sure Senna does exactly what you want?');
+        ie_close('h2');
+        ie_open('p');
+        itext('By default, Senna is setup to route every link to ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext('- the out-of-the-box screen that senna provides to handle navigation so you don\'t have to change anything in your existing back end.');
+        ie_close('p');
+        ie_open('p');
+        itext('For most situations, this will be the ideal use of Senna because it is smart enough to know how to paint your surfaces with the new information when you navigate.');
+        ie_close('p');
+        ie_open('p');
+        itext('But what if you want Senna to only be active during certain navigations? We make it easy for you to control what screens of your app interact with Senna and which ones do not. We call this ');
+        ie_open('a', null, null, 'href', '#taking-control');
+        itext('Controlling Data Attributes');
+        ie_close('a');
+        itext('.');
+        ie_close('p');
+        ie_close('article');
+        ie_open('article', null, null, 'id', 'taking-control');
+        ie_open('h2');
+        itext('Taking control of your surfaces');
+        ie_close('h2');
+        ie_open('p');
+        itext('Once you have Senna fully running (see ');
+        ie_open('a', null, null, 'href', '/docs/intro/gettingStarted.html');
+        itext('Getting Started');
+        ie_close('a');
+        itext(' if you are not sure), you can choose to limit Senna by controlling the data attributes.');
+        ie_close('p');
+        ie_open('p');
+        itext('In order to limit your whole app from routing through ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext(', you can add ');
+        ie_open('code');
+        itext('<link rel="senna-route">');
+        ie_close('code');
+        itext(' to the ');
+        ie_open('code');
+        itext('head');
+        ie_close('code');
+        itext(' of your document. This will tell Senna to ');
+        ie_open('strong');
+        itext('only');
+        ie_close('strong');
+        itext(' route your specified paths through ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext('. Your document would look like this:');
+        ie_close('p');
+        ie_void('p');
+        itext('\n');
+        ie_open('pre');
+        ie_open('code');
+        ie_open('span', null, null, 'class', 'hljs-meta');
+        itext('<!doctype html>');
+        ie_close('span');
+        itext('\n');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('html');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('head');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('meta');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('charset');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"utf-8"');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('title');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('Senna - blazing fast apps');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('title');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('link');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('rel');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"stylesheet"');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('href');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"../build/senna.css"');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n    ');
+        ie_open('span', null, null, 'class', 'hljs-comment');
+        itext('<!-- Controlling Data Attributes -->');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('link');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('rel');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"senna-route"');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('href');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"/examplePage1.html"');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('type');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"senna.HtmlScreen"');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('script');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('src');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"../build/senna-debug.js"');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        ie_void('span', null, null, 'class', 'undefined');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('script');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('head');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('body');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('data-senna');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('a');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('href');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"/pages/examplePage1.html"');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('Page 1');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('a');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('a');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('href');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"/pages/examplePage2.html"');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('Page 2');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('a');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('div');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('id');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"my-awesome-surface"');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-attr');
+        itext('data-senna-surface');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n    ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('<');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('p');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('Default content of my website.');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('p');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n  ');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('div');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('body');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n');
+        ie_open('span', null, null, 'class', 'hljs-tag');
+        itext('</');
+        ie_open('span', null, null, 'class', 'hljs-name');
+        itext('html');
+        ie_close('span');
+        itext('>');
+        ie_close('span');
+        itext('\n');
+        ie_close('code');
+        ie_close('pre');
+        itext('\n');
+        ie_void('p');
+        ie_open('p');
+        itext('You can also use ');
+        ie_open('a', null, null, 'href', 'https://en.wikipedia.org/wiki/Regular_expression', 'target', '_blank');
+        itext('RegEx');
+        ie_close('a');
+        itext(' to select multiple paths with one string.');
+        ie_close('p');
+        ie_void('p');
+        itext('\n');
+        ie_open('pre');
+        ie_open('code');
+        itext('<link ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('rel');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"senna-route"');
+        ie_close('span');
+        itext(' href=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"examplePage1.html"');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('type');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"senna.HtmlScreen"');
+        ie_close('span');
+        itext('>\n<link ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('rel');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"senna-route"');
+        ie_close('span');
+        itext(' href=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"regex:examplePage[1-9].html"');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('type');
+        ie_close('span');
+        itext('=');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"senna.HtmlScreen"');
+        ie_close('span');
+        itext('>\n');
+        ie_close('code');
+        ie_close('pre');
+        itext('\n');
+        ie_void('p');
+        ie_close('article');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param209 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'docsFullyFunctionalControllingSurfacesHtml.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var docsFullyFunctionalControllingSurfacesHtml = function (_Component) {
+    babelHelpers.inherits(docsFullyFunctionalControllingSurfacesHtml, _Component);
+
+    function docsFullyFunctionalControllingSurfacesHtml() {
+      babelHelpers.classCallCheck(this, docsFullyFunctionalControllingSurfacesHtml);
+      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalControllingSurfacesHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalControllingSurfacesHtml)).apply(this, arguments));
+    }
+
+    return docsFullyFunctionalControllingSurfacesHtml;
+  }(Component);
+
+  Soy.register(docsFullyFunctionalControllingSurfacesHtml, templates);
+  this['metalNamed']['controllingSurfaces'] = this['metalNamed']['controllingSurfaces'] || {};
+  this['metalNamed']['controllingSurfaces']['docsFullyFunctionalControllingSurfacesHtml'] = docsFullyFunctionalControllingSurfacesHtml;
+  this['metalNamed']['controllingSurfaces']['templates'] = templates;
+  this['metal']['controllingSurfaces'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['controllingSurfaces'];
+
+  var docsFullyFunctionalControllingSurfacesHtml = function (_Component) {
+    babelHelpers.inherits(docsFullyFunctionalControllingSurfacesHtml, _Component);
+
+    function docsFullyFunctionalControllingSurfacesHtml() {
+      babelHelpers.classCallCheck(this, docsFullyFunctionalControllingSurfacesHtml);
+      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalControllingSurfacesHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalControllingSurfacesHtml)).apply(this, arguments));
+    }
+
+    return docsFullyFunctionalControllingSurfacesHtml;
+  }(Component);
+
+  ;
+
+  Soy.register(docsFullyFunctionalControllingSurfacesHtml, templates);
+
+  this['metal']['docsFullyFunctionalControllingSurfacesHtml'] = docsFullyFunctionalControllingSurfacesHtml;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace docsFullyFunctionalIndexHtml.
+     * @public
+     */
+
+    goog.module('docsFullyFunctionalIndexHtml.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var param214 = function param214() {};
+      $templateAlias1(soy.$$assignDefaults({ content: param214 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'docsFullyFunctionalIndexHtml.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var docsFullyFunctionalIndexHtml = function (_Component) {
+    babelHelpers.inherits(docsFullyFunctionalIndexHtml, _Component);
+
+    function docsFullyFunctionalIndexHtml() {
+      babelHelpers.classCallCheck(this, docsFullyFunctionalIndexHtml);
+      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalIndexHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalIndexHtml)).apply(this, arguments));
+    }
+
+    return docsFullyFunctionalIndexHtml;
+  }(Component);
+
+  Soy.register(docsFullyFunctionalIndexHtml, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['docsFullyFunctionalIndexHtml'] = docsFullyFunctionalIndexHtml;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var docsFullyFunctionalIndexHtml = function (_Component) {
+    babelHelpers.inherits(docsFullyFunctionalIndexHtml, _Component);
+
+    function docsFullyFunctionalIndexHtml() {
+      babelHelpers.classCallCheck(this, docsFullyFunctionalIndexHtml);
+      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalIndexHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalIndexHtml)).apply(this, arguments));
+    }
+
+    return docsFullyFunctionalIndexHtml;
+  }(Component);
+
+  ;
+
+  Soy.register(docsFullyFunctionalIndexHtml, templates);
+
+  this['metal']['docsFullyFunctionalIndexHtml'] = docsFullyFunctionalIndexHtml;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from screens.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace docsFullyFunctionalScreensHtml.
+     * @public
+     */
+
+    goog.module('docsFullyFunctionalScreensHtml.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var param218 = function param218() {
+        ie_open('h1');
+        itext('Screens');
+        ie_close('h1');
+        ie_open('article', null, null, 'id', 'senna.HTMLScreen');
+        ie_open('h2');
+        itext('Senna.HTMLscreen');
+        ie_close('h2');
+        ie_open('p');
+        itext('Senna.js provides a special type of route handler, or interface, called ');
+        ie_open('code');
+        itext('senna.Screen');
+        ie_close('code');
+        itext('. This in itself is not an active class, rather, it merely defines the screen interface methods and demonstrates how to use the API. The real magic happens when we extend ');
+        ie_open('code');
+        itext('senna.Screen');
+        ie_close('code');
+        itext('.');
+        ie_close('p');
+        ie_open('p');
+        itext('We knew this might be a little tricky at first, so we creating our own extention: ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext('- the default screen we created to make Senna.js ready to work straight out of the box.');
+        ie_close('p');
+        ie_close('article');
+        ie_open('article', null, null, 'id', 'senna.screenToWork');
+        ie_open('h2');
+        itext('How can you put Senna.HTMLScreen to work?');
+        ie_close('h2');
+        ie_open('p');
+        itext('We designed Senna to use ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext(' as the default extension for all navigation so you can start using Senna without worrying about changing anything in your back end. But how do I start setting up my screens with ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext('? That\'s the thing, you already did!');
+        ie_close('p');
+        ie_open('p');
+        itext('When you added ');
+        ie_open('code');
+        itext('data-senna');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+        itext('data-senna-surface');
+        ie_close('code');
+        itext(' to your document (see ');
+        ie_open('a', null, null, 'href', '/docs/intro/gettingStarted.html');
+        itext('Getting Started');
+        ie_close('a');
+        itext('), you told senna to route all the navigations through ');
+        ie_open('code');
+        itext('senna.HTMLScreen');
+        ie_close('code');
+        itext('.');
+        ie_close('p');
+        ie_close('article');
+        ie_open('article', null, null, 'id', 'moreScreens');
+        ie_open('h2');
+        itext('Screens, screens, and more screens');
+        ie_close('h2');
+        ie_open('p');
+        itext('We want you to know how Senna works so that you can fully trust it to empower your app. Bellow are the cycle logs for senna.Screen. Feel free to look at them or even inspect your own browser console during a link navigation using Senna.');
+        ie_close('p');
+        ie_open('p');
+        itext('You can also jump to ');
+        ie_open('a', null, null, 'href', '/docs/advancedUsage/controllingSurfaces.html');
+        itext('Controlling Surfaces');
+        ie_close('a');
+        itext(' to learn more about how to customize screens on your app.');
+        ie_close('p');
+        ie_void('p');
+        itext('\n');
+        ie_open('pre');
+        ie_open('code');
+        itext('Navigate to [/examples/mysite/pages/page1.html]\n');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('Create');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('screen');
+        ie_close('span');
+        itext(' ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('for');
+        ie_close('span');
+        itext(' [/examples/mysite/pages/page1.html]\n');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('Screen');
+        ie_close('span');
+        itext(' [screen_1408572719183] ');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('load');
+        ie_close('span');
+        itext('\nXHR finished loading: GET ');
+        ie_open('span', null, null, 'class', 'hljs-string');
+        itext('"http://localhost:8000/examples/mysite/pages/page1.html"');
+        ie_close('span');
+        itext('.\n');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('Screen');
+        ie_close('span');
+        itext(' [screen_1408572719183] add content to ');
+        ie_open('span', null, null, 'class', 'hljs-built_in');
+        itext('surface');
+        ie_close('span');
+        itext(' [');
+        ie_open('span', null, null, 'class', 'hljs-built_in');
+        itext('header');
+        ie_close('span');
+        itext(']\n');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('Screen');
+        ie_close('span');
+        itext(' [screen_1408572719183] add content to ');
+        ie_open('span', null, null, 'class', 'hljs-built_in');
+        itext('surface');
+        ie_close('span');
+        itext(' [content]\n');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('Screen');
+        ie_close('span');
+        itext(' [screen_1408572719183] flip\n');
+        ie_open('span', null, null, 'class', 'hljs-keyword');
+        itext('Screen');
+        ie_close('span');
+        itext(' [screen_1408572719183] activate\nNavigation done\n');
+        ie_close('code');
+        ie_close('pre');
+        itext('\n');
+        ie_void('p');
+        ie_close('article');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param218 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'docsFullyFunctionalScreensHtml.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var docsFullyFunctionalScreensHtml = function (_Component) {
+    babelHelpers.inherits(docsFullyFunctionalScreensHtml, _Component);
+
+    function docsFullyFunctionalScreensHtml() {
+      babelHelpers.classCallCheck(this, docsFullyFunctionalScreensHtml);
+      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalScreensHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalScreensHtml)).apply(this, arguments));
+    }
+
+    return docsFullyFunctionalScreensHtml;
+  }(Component);
+
+  Soy.register(docsFullyFunctionalScreensHtml, templates);
+  this['metalNamed']['screens'] = this['metalNamed']['screens'] || {};
+  this['metalNamed']['screens']['docsFullyFunctionalScreensHtml'] = docsFullyFunctionalScreensHtml;
+  this['metalNamed']['screens']['templates'] = templates;
+  this['metal']['screens'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['screens'];
+
+  var docsFullyFunctionalScreensHtml = function (_Component) {
+    babelHelpers.inherits(docsFullyFunctionalScreensHtml, _Component);
+
+    function docsFullyFunctionalScreensHtml() {
+      babelHelpers.classCallCheck(this, docsFullyFunctionalScreensHtml);
+      return babelHelpers.possibleConstructorReturn(this, (docsFullyFunctionalScreensHtml.__proto__ || Object.getPrototypeOf(docsFullyFunctionalScreensHtml)).apply(this, arguments));
+    }
+
+    return docsFullyFunctionalScreensHtml;
+  }(Component);
+
+  ;
+
+  Soy.register(docsFullyFunctionalScreensHtml, templates);
+
+  this['metal']['docsFullyFunctionalScreensHtml'] = docsFullyFunctionalScreensHtml;
 }).call(this);
 }).call(this);
 //# sourceMappingURL=bundle.js.map
