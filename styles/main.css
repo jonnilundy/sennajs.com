@@ -9755,11 +9755,11 @@ code {
 
 .docs-home-top-title {
   color: rgba(27, 26, 24, 0.85);
-  font-size: 36px;
+  font-size: 70px;
   font-weight: 300;
   letter-spacing: -1px;
   line-height: 58px;
-  margin: 80px 0 56px;
+  margin: 95px 0 25px;
   text-align: center;
   font-family: "Galano Bold", sans-serif;
   color: #1B1A18; }
@@ -9930,11 +9930,14 @@ code {
 	 ========================================================================== */
 @media (max-width: 960px) {
   .docs .sidebar-offset {
-    padding-top: 60px; }
-  .topbar.docs {
-    display: none; }
-  .docs .sidebar-offset .topbar {
-    display: none; }
+    padding-top: 0; }
+  /*.topbar.docs {
+		display: none;
+	}
+
+	.docs .sidebar-offset .topbar {
+		display: none;
+	}*/
   .topbar.topbar-large .wedeploy-logo .liferay {
     display: none; }
   .docs-home-top-form .btn {
@@ -9947,8 +9950,8 @@ code {
     padding-bottom: 40px;
     top: 0; }
   .docs .sidebar-offset {
-    width: calc(100% - 284px);
-    margin-left: 284px; }
+    margin-left: 284px;
+    width: calc(100% - 284px); }
   .topbar-docs-aux {
     display: flex; }
   .topbar-docs-main {
@@ -9991,7 +9994,8 @@ code {
 /* Sidebar
 	 ========================================================================== */
 .docs .sidebar-search {
-  margin: 20px; }
+  margin: 20px;
+  display: none; }
   .docs .sidebar-search .form-control {
     border: 1px solid #FFF; }
     .docs .sidebar-search .form-control:focus {
@@ -10164,7 +10168,7 @@ code {
 
 /* Toggle Header
 	 ========================================================================== */
-/*.toggler-header-collapsed .icon-12-arrow-up-short {
+.toggler-header-collapsed .icon-12-arrow-up-short {
   display: none; }
 
 .toggler-header-collapsed .icon-12-arrow-down-short {
@@ -10176,8 +10180,14 @@ code {
 .toggler-header-expanded .icon-12-arrow-down-short {
   display: none; }
 
-.toggler-collapsed {
+/*.toggler-collapsed {
   display: none; }*/
+/*
+.docs-home-top-title {
+	font-size: 60px;
+	margin: 95px 0 25px;
+}
+*/
 /* Custom TopbarColor
 		========================================================================== */
 .topbar.docs .topbar-logo-link {
@@ -10721,7 +10731,9 @@ reading-title {
   .major-update .update-point {
     border-width: 0;
     margin: 0 auto;
-    text-decoration: underline; } }
+    text-decoration: underline; }
+  .update-point {
+    background-color: transparent; } }
 
 /* Loading */
 .senna-loading-bar {
