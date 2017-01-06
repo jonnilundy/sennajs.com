@@ -4,7 +4,7 @@
 		"title": "Home",
 		"description": "A blazing fast Single Page Application engine",
 		"srcFilePath": "src/pages/index.soy",
-		"url": "/",
+		"url": "/.",
 		"children": [
 			{
 				"description": "Documentation description.",
@@ -48,7 +48,8 @@
 						"title": "Getting Started",
 						"weight": 2,
 						"url": "/docs/gettingStarted/gettingStarted.html",
-						"srcFilePath": "src/pages/docs/gettingStarted/index.md"
+						"srcFilePath": "src/pages/docs/gettingStarted/index.md",
+						"location": "/docs/gettingStarted"
 					},
 					{
 						"children": [
@@ -77,7 +78,8 @@
 						"title": "Fully Functional",
 						"weight": 3,
 						"url": "/docs/fullyFunctional/screens.html",
-						"srcFilePath": "src/pages/docs/fullyFunctional/index.md"
+						"srcFilePath": "src/pages/docs/fullyFunctional/index.md",
+						"location": "/docs/fullyFunctional"
 					},
 					{
 						"children": [
@@ -133,7 +135,8 @@
 						"title": "Develop",
 						"weight": 4,
 						"url": "/docs/develop/uiFeedback.html",
-						"srcFilePath": "src/pages/docs/develop/index.md"
+						"srcFilePath": "src/pages/docs/develop/index.md",
+						"location": "/docs/develop"
 					},
 					{
 						"description": "Documentation search description.",

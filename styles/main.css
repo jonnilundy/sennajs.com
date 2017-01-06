@@ -8911,6 +8911,7 @@ button.close {
   margin: 0;
   color: #1B1A18; }
   .header-title span {
+    opacity: 0;
     color: rgba(27, 26, 24, 0.6); }
 
 .header-subtitle {
@@ -8975,6 +8976,9 @@ code {
   opacity: 0;
   -webkit-animation: fadeInRight 1s ease 1 forwards;
   animation: fadeInRight 1s ease 1 forwards; }
+  #header-h1 span {
+    -webkit-animation: fadeIn 1s ease 1.3s 1 forwards;
+    animation: fadeIn 1s ease 1.3s 1 forwards; }
 
 #header-h2 {
   opacity: 0;
@@ -8995,6 +8999,20 @@ code {
   opacity: 0;
   -webkit-animation: fadeInBottom 0.6s ease .6s 1 forwards;
   animation: fadeInBottom 0.6s ease .6s 1 forwards; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    transform: translate3d(0, -80px, 0);
+    opacity: 0; }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
 
 @-webkit-keyframes fadeInTop {
   0% {
@@ -9328,7 +9346,7 @@ code {
   line-height: 34px;
   margin: 10px 0 20px 0;
   color: #1b1a18;
-  border-left: 4px solid rgba(255, 204, 0, 0.8);
+  border-left: 4px solid rgba(255, 204, 0, 0.9);
   padding-left: 10px; }
 
 .initializing-image {
@@ -9339,11 +9357,19 @@ code {
   width: 100%;
   text-align: center; }
 
+#initializing-link {
+  border-bottom: 3px solid #FFCC00; }
+
+#initializing-link:hover {
+  color: rgba(27, 26, 24, 0.9); }
+
 #example-button {
   background: rgba(255, 204, 0, 0.9);
   color: #1b1a18;
   font-size: 17px;
   padding: 20px 35px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   line-height: 20px;
   transition: all 0.3s ease-in-out; }
 
