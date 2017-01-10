@@ -8768,6 +8768,9 @@ button.close {
     top: -2px;
     display: none; }
 
+.topbar-item {
+  margin: 0 10px; }
+
 .topbar-list {
   margin-right: 8px;
   align-items: stretch;
@@ -8827,7 +8830,9 @@ button.close {
 
 @media (min-width: 600px) {
   .topbar-logo-link .by {
-    display: block; } }
+    display: block; }
+  .topbar-item {
+    margin: 0 20px; } }
 
 /* Loading */
 .senna-loading-bar {
@@ -8901,17 +8906,26 @@ button.close {
   animation-name: fadeIn; }
 
 .header {
-  padding: 80px 0 0;
+  padding: 150px 0 0;
   text-align: center;
   background-color: white; }
 
+/*.header-title {
+	font-family: $font-family-secondary-bold;
+	font-size: 55px;
+	margin: 0;
+	color: $primary;
+  span {
+    opacity: 0;
+    color: rgba($primary, .6);
+  }
+}*/
 .header-title {
   font-family: "Galano Bold", sans-serif;
   font-size: 55px;
   margin: 0;
   color: #1B1A18; }
   .header-title span {
-    opacity: 0;
     color: rgba(27, 26, 24, 0.6); }
 
 .header-subtitle {
@@ -8937,21 +8951,30 @@ button.close {
 .btn-default {
   animation: all 0.3s ease-in-out; }
 
-#gh-btns-container {
+.gh-btns {
+  margin: 0;
+  margin-top: 150px;
+  background: rgba(27, 26, 24, 0.07);
+  padding-top: 16px;
+  padding-bottom: 10.5px; }
+
+/*#gh-btns-container {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0;
   padding-right: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 .gh-btns {
   margin: 0;
   margin-top: 80px;
   padding: 17px 0 12px;
-  background: rgba(27, 26, 24, 0.07); }
-  .gh-btns #gh-count:hover {
-    color: #FFCC00; }
-
+  background: rgba($primary, .07);
+  #gh-count:hover {
+    color: $accent;
+  }
+}*/
 code {
   background-color: white;
   box-shadow: 0 2px 11px 2px rgba(0, 61, 63, 0.1);
@@ -8971,14 +8994,23 @@ code {
   #header-button-github:hover span {
     color: #ffcc00; }
 
+@media (min-width: 600px) {
+  .header-title {
+    font-size: 99px; }
+  .header-subtitle {
+    font-size: 24px; }
+  /*gh-btns {
+    margin-top: 0;
+  }
+  .header {
+    padding-top: 140px;
+  }*/ }
+
 /* Transition */
 #header-h1 {
   opacity: 0;
   -webkit-animation: fadeInRight 1s ease 1 forwards;
   animation: fadeInRight 1s ease 1 forwards; }
-  #header-h1 span {
-    -webkit-animation: fadeIn 1s ease 1.3s 1 forwards;
-    animation: fadeIn 1s ease 1.3s 1 forwards; }
 
 #header-h2 {
   opacity: 0;
@@ -8999,20 +9031,6 @@ code {
   opacity: 0;
   -webkit-animation: fadeInBottom 0.6s ease .6s 1 forwards;
   animation: fadeInBottom 0.6s ease .6s 1 forwards; }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  0% {
-    transform: translate3d(0, -80px, 0);
-    opacity: 0; }
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1; } }
 
 @-webkit-keyframes fadeInTop {
   0% {
@@ -9077,18 +9095,6 @@ code {
   100% {
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
-
-@media (min-width: 600px) {
-  .header-title {
-    font-size: 99px; }
-  .header-subtitle {
-    font-size: 24px; }
-  .header-cta a {
-    margin-bottom: 140px; }
-  gh-btns {
-    margin-top: 0; }
-  .header {
-    padding-top: 140px; } }
 
 .about {
   background: #1B1A18;
@@ -10095,6 +10101,9 @@ code {
   text-align: center;
   vertical-align: middle;
   width: 16px; }
+
+.icon-16-undefined {
+  display: none; }
 
 .docs .sidebar-list-1 .sidebar-link:hover .sidebar-icon,
 .docs .sidebar-list-1 .sidebar-link:focus .sidebar-icon,
