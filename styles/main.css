@@ -9392,21 +9392,6 @@ code {
   padding: 0;
   white-space: inherit; }
 
-.initializing-code .hljs-string, .initializing-code .hljs-value, .initializing-code .hljs-inheritance, .initializing-code .hljs-header, .initializing-code .hljs-name, .initializing-code .ruby .hljs-symbol, .initializing-code .xml .hljs-cdata {
-  color: #ff4040; }
-
-.initializing-code .hljs-number, .initializing-code .hljs-preprocessor, .initializing-code .hljs-pragma, .initializing-code .hljs-built_in, .initializing-code .hljs-literal, .initializing-code .hljs-constant {
-  color: #ff4040; }
-
-.initializing-code .hljs-keyword, .initializing-code .javascript .hljs-function, .initializing-code .hljs-params {
-  color: #ff4040; }
-
-.initializing-code .hljs-variable, .initializing-code .hljs-attribute, .initializing-code .hljs-tag, .initializing-code .hljs-regexp, .initializing-code .ruby .hljs-constant, .initializing-code .xml .hljs-tag .hljs-title, .initializing-code .xml .hljs-pi, .initializing-code .xml .hljs-doctype, .initializing-code .html .hljs-doctype, .initializing-code .css .hljs-id, .initializing-code .css .hljs-class, .initializing-code .css .hljs-pseudo {
-  color: #ff4040; }
-
-.initializing-code .hljs-function, .initializing-code .python .hljs-decorator, .initializing-code .python .hljs-title, .initializing-code .ruby .hljs-function .hljs-title, .initializing-code .ruby .hljs-title .hljs-keyword, .initializing-code .perl .hljs-sub, .initializing-code .javascript .hljs-title, .initializing-code .coffeescript .hljs-title {
-  color: #ff4040; }
-
 @media (min-width: 600px) {
   .initializing-code code {
     font-size: 15px; } }
@@ -9756,21 +9741,6 @@ code {
   color: white;
   padding: 0;
   white-space: inherit; }
-
-.docs-content .hljs-string, .docs-content .hljs-value, .docs-content .hljs-inheritance, .docs-content .hljs-header, .docs-content .hljs-name, .docs-content .ruby .hljs-symbol, .docs-content .xml .hljs-cdata {
-  color: #ff4040; }
-
-.docs-content .hljs-number, .docs-content .hljs-preprocessor, .docs-content .hljs-pragma, .docs-content .hljs-built_in, .docs-content .hljs-literal, .docs-content .hljs-constant {
-  color: #ff4040; }
-
-.docs-content .hljs-keyword, .docs-content .javascript .hljs-function, .docs-content .hljs-params {
-  color: #00a4ff; }
-
-.docs-content .hljs-variable, .docs-content .hljs-attribute, .docs-content .hljs-tag, .docs-content .hljs-regexp, .docs-content .ruby .hljs-constant, .docs-content .xml .hljs-tag .hljs-title, .docs-content .xml .hljs-pi, .docs-content .xml .hljs-doctype, .docs-content .html .hljs-doctype, .docs-content .css .hljs-id, .docs-content .css .hljs-class, .docs-content .css .hljs-pseudo {
-  color: #ff4040; }
-
-.docs-content .hljs-function, .docs-content .python .hljs-decorator, .docs-content .python .hljs-title, .docs-content .ruby .hljs-function .hljs-title, .docs-content .ruby .hljs-title .hljs-keyword, .docs-content .perl .hljs-sub, .docs-content .javascript .hljs-title, .docs-content .coffeescript .hljs-title {
-  color: rgba(7, 190, 123, 0.9); }
 
 /* Home - Top
 	 ========================================================================== */
