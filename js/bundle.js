@@ -20516,6 +20516,9 @@ babelHelpers;
 
 	this['metal']['SideBar'] = SideBar;
 }).call(this);
+"use strict";
+
+(function () {}).call(this);
 'use strict';
 
 (function () {
@@ -21090,9 +21093,6 @@ babelHelpers;
 
   this['metal']['mainDocs'] = mainDocs;
 }).call(this);
-"use strict";
-
-(function () {}).call(this);
 'use strict';
 
 (function () {
